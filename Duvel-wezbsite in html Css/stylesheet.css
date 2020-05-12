@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.html {
+  font: 16px;
+  color: #444444;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: left;
+  border: solid blue 1px;
+}
+
+/*header*/
+.header_flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.header_logo {
+  padding-left: 2rem;
+}
+.header_logo > img {
+  height: auto;
+
+  width: 130px;
+}
+.header_knoppen {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+
+.header_knoppenBoven {
+  border: solid red 1px;
+}
+
+.header_knoppenOnder {
+  border: solid red 1px;
+}
+
+/*hero*/
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
