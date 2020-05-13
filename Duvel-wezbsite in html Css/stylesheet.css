@@ -3,17 +3,51 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*nieuwe font*/
 
-.html {
-  font: 16px;
+h3 {
+  color: #c8383a;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-family: Zeronero, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 1.75rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  display: block;
+}
+.knoppen {
+  font-size: 1rem;
+  color: #444;
+  display: inline-block;
+  font-family: Zeronero, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: none;
+}
+#pijltje-knoppen {
+  color: #c8383a;
+}
+
+.font-tekst {
+  font: 1.125rem;
   color: #444444;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.333;
 }
 .container {
+  margin-left: 2rem;
+  margin-right: 2rem;
   display: flex;
   justify-content: center;
-  padding: 4rem 2rem;
-  text-align: left;
-  border: solid blue 1px;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 /*header*/
@@ -49,4 +83,103 @@
 .responsive {
   width: 100%;
   height: auto;
+}
+.container_background-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text_background-image {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+/*<!--nieuwe bieren-->*/
+.nieuweBieren {
+  background-image: url("https://www.duvel.com/img/bg-paper.jpg");
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.nieuweBieren_IPA {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  float: right;
+
+  width: 40vw;
+}
+
+.nieuweBieren_IPA-foto {
+  text-align: left;
+  width: 40vw;
+}
+.nieuweBieren_IPA-foto > img {
+  object-fit: cover;
+  width: 40vw;
+}
+.nieuweBieren_IPA_tekst {
+  text-align: left;
+  color: #444444;
+}
+.nieuweBieren_Tripel {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  float: left;
+
+  width: 40vw;
+}
+.nieuweBieren_Tripel-foto {
+  text-align: left;
+  width: 40vw;
+}
+.nieuweBieren_Tripel-foto > img {
+  object-fit: cover;
+  width: 40vw;
+}
+
+.nieuweBieren_Tripel_tekst {
+  text-align: left;
+  color: #444444;
+}
+
+/*<!--online platform-->*/
+.online-platform {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 82vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.online-platform_streepjes {
+  content: "";
+  display: block;
+  background-image: url("https://www.duvel.com/img/svg/stripes.svg");
+  width: 35px;
+}
+
+.online-platform_tekst {
+  /*display: block;
+  font-size: 1.125rem;
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
+  line-height: 1.333;
+  color: #444444;*/
+  text-align: left;
+  color: #444444;
+  width: 40vw;
+}
+
+.online-platform_foto {
+  text-align: left;
+  width: 30vw;
+}
+.online-platform_foto > img {
+  object-fit: cover;
+  width: 30vw;
 }
