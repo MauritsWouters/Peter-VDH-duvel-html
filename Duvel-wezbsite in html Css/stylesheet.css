@@ -27,9 +27,27 @@ h3 {
 
   background-color: transparent;
   border: none;
+  padding-top: 1em;
 }
 #pijltje-knoppen {
+  fill: #c8383a;
+}
+.knoppen_bezoekDuvel {
+  font-size: 1rem;
+  font-family: Zeronero, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
   color: #c8383a;
+  border: 3px solid #c8383a;
+  border-radius: 3px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+}
+.knoppen_bezoekDuvel:hover {
+  background-color: #c8383a;
+  color: white;
+  border: 1px solid #c8383a;
 }
 
 .font-tekst {
@@ -183,3 +201,91 @@ a:link {
   object-fit: cover;
   width: 30vw;
 }
+
+/*<!--bezoek duvel-->*/
+.bezoekDuvel {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 82vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bezoekDuvel_streepjes {
+  content: "";
+  display: block;
+  background-image: url("https://www.duvel.com/img/svg/stripes.svg");
+  width: 35px;
+}
+
+.bezoekDuvel_tekst {
+  /*display: block;
+  font-size: 1.125rem;
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
+  line-height: 1.333;
+  color: #444444;*/
+  text-align: left;
+  color: #444444;
+  width: 40vw;
+}
+
+.bezoekDuvel_foto {
+  text-align: left;
+  width: 30vw;
+}
+.bezoekDuvel_foto > img {
+  object-fit: cover;
+  width: 30vw;
+}
+
+/*<!--video-->*/
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.container_video_background-image {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+.text_video_background-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.text_video_background-image_titel {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-family: Zeronero, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 3rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  display: block;
+}
+.font-tekst_video {
+  font: 1.8rem;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.333;
+  text-transform: uppercase;
+}
+.font-tekst_video_button {
+  position: absolute;
+  top: 4.5rem;
+  right: 12rem;
+  fill: white;
+}
+
+/*!--carroussel-->*/
